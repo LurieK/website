@@ -112,7 +112,8 @@ a:link {
     color: black;
 }
 a:visited { text-decoration: none; }
- .email:hover{
+
+.email:hover{
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
@@ -122,8 +123,27 @@ a:visited { text-decoration: none; }
 
 }
 
+a:active,
+a:hover,
+a:visited, 
+a:link { 
+    text-decoration: none;
+    border: none;
+   
+    
+ }
 
-a:active { text-decoration: none; }
+a:active,
+a:hover,
+a:visited, 
+a:link { 
+    text-decoration: none;
+    border: none;
+   
+    
+ }
+
+
 
 @media screen and (max-width: 1000px){
     header{
@@ -162,15 +182,6 @@ a:active { text-decoration: none; }
         
      }
 
-    a:active,
-    a:hover,
-    a:visited, 
-    a:link { 
-        text-decoration: none;
-        border: none;
-        color: white;
-        
-     }
  
 
     .email:hover {
