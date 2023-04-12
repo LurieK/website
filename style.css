@@ -24,15 +24,12 @@ h1 {
     text-align: center;
 
 }
-
+/* why isn't Montseratte working? */
 h2 {
     font-family: 'Montserrat';
-    color: white;
     font-size: 70px;
-    text-align: center;
-    margin-top: 0;
-    padding-top: 30px;
     font-weight: 400;
+    
 }
 
 h3 {
@@ -95,6 +92,8 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    
     
 }
 
@@ -173,6 +172,7 @@ a:link {
     .opening {
         display: flex;
         flex-direction: column;
+       
     }
     .opening img {
         width: 90%;
@@ -205,13 +205,14 @@ a:link {
 }
 
 
- h2 {
+ .portfolio h2 {
     color: white;
     font-size: 70px;
     text-align: center;
     margin-top: 0;
     padding-top: 30px;
     font-weight: 400;
+    padding-top: 30px;
 }
 
 .portfolio {
@@ -332,7 +333,29 @@ a:link {
      
 }
 
+.about {
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row;
 
+    margin-top: 16px;
+}
+
+.about img {
+    width: 25%;
+    margin-top: 150px;
+
+}
+
+.about h2{
+    font-size: 60px;
+}
+
+.about-txt {
+    margin-left: 25px;
+}
 
 
 
