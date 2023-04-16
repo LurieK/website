@@ -346,6 +346,7 @@ a:link {
 .about img {
     width: 25%;
     margin-top: 150px;
+    margin-right: 100px;
 
 }
 
@@ -355,10 +356,31 @@ a:link {
 
 .about-txt {
     margin-left: 25px;
+    width: 50%;
 }
 
 
+@media screen and (max-width: 1000px) {
+    .about {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .about img {
+        width: 75%;
+        
+        
+    
+    }
+
+    .about-txt {
+        width: 75%;
+        
+
+    }
+}
 
 
 
