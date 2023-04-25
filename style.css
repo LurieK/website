@@ -370,7 +370,10 @@ a:link {
     }
 
     .about img {
-        width: 75%;
+        width: 60%;
+        margin-top: 100px;
+        padding-bottom: 50px;
+        margin-right: 0;
         
         
     
@@ -386,45 +389,61 @@ a:link {
 
 .contact {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     background-color: #000000;
     color: white;
+    
 }
 .contact p {
     color: white
 }
 
-.contact-text {
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    margin-top: 5%;
-    margin-left: 15%;
-    
-}
+
+
+
 
 .links{
     list-style: none;
     display: flex;
     flex-flow: row;
-    margin-left: 175px;
+    
 
 }
 
+.links a {
+    display: flex;
+    flex-flow: row;
+    
+}
+
 ul img {
-    width: 25px;
+    padding-top: 12px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
+}
+
+.links p {
+    
 }
 
 .links li {
     margin-left: 10px;
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
+.links li:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
 
-
-.contact-images img {
+/* .contact-images img {
     width: 50%;
     margin-right: 5px;
     
@@ -443,28 +462,31 @@ ul img {
 
 .img2 {
     align-self: flex-end;
-}
+} */
 
 
 @media screen and (max-width: 1000px) {
-
-    .contact{
+    .contact {
         display: flex;
-        flex-flow: column;
+        justify-content: center;
+        align-items: center ;
+        margin: 0
     }
+  
+   .contact h2{
+        font-size: 60px;
 
-    .contact-form {
-        width: 80%;
-        display: flex;
-        justify-content: flex-end;
-    }
 
-    .contact-images {
-        margin-top: 0;
-    }
+   }
+
+   .links {
+    margin-left: 0;
+    padding-left: 0;
+   }
+
+   
+
 }
-
-
 
 
 
