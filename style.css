@@ -345,8 +345,9 @@ a:link {
 
 .about img {
     width: 25%;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-right: 100px;
+    padding-bottom: 50px;
 
 }
 
@@ -383,10 +384,85 @@ a:link {
 }
 
 
+.contact {
+    display: flex;
+    flex-flow: row;
+    background-color: #000000;
+    color: white;
+}
+.contact p {
+    color: white
+}
+
+.contact-text {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-top: 5%;
+    margin-left: 15%;
+    
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    margin-left: 175px;
+
+}
+
+ul img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.links li {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
 
 
 
+.contact-images img {
+    width: 50%;
+    margin-right: 5px;
+    
+}
 
+.contact-images {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 20%;
+}
+
+.img1 {
+    align-self: flex-start;
+}
+
+.img2 {
+    align-self: flex-end;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .contact{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .contact-form {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .contact-images {
+        margin-top: 0;
+    }
+}
 
 
 
