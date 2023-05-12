@@ -396,7 +396,7 @@ a:link {
 
 
     .responsive-portfolio p {
-        color: white;
+        color: black;
         width: 75%;
         
     }
@@ -420,7 +420,7 @@ a:link {
     .google-text-responisive a,
     .tarot-text-responisive a {
         text-decoration: underline;
-        color: white;
+        color: black;
         
     }
      
