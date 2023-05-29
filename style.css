@@ -51,6 +51,7 @@ p {
     list-style: none;
     color: white;
     margin-right: 20px;
+    margin-bottom: 0;
 
 }
 
@@ -433,7 +434,7 @@ a:link {
     align-content: center;
     flex-flow: row;
     margin-top: 15px;
-    margin-bottom: 15px;
+    
 }
 
 /* .about img {
