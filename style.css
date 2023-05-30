@@ -523,6 +523,7 @@ button:hover {
     align-content: center;
     flex-flow: row;
     margin-top: 15px;
+    padding-bottom: 40px;
     
 }
 
@@ -559,7 +560,7 @@ button:hover {
         flex-flow: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 40px;
+        
     }
 
     .about h2 {
