@@ -429,10 +429,13 @@ a:link {
 }
 
 button {
-    margin-top: 60px;
     background-color: #2B3242;
     border: 3px solid white;
     color: white;
+    padding: 15px;
+    margin-right: 5px;
+    font-family: 'Roboto';
+    font-size: 17px;
   
 }
 
@@ -441,6 +444,12 @@ button:hover {
     box-shadow: 5px 6px 15px 0px rgba(0,0,0,0.4);
 }
 
+.google-links,
+.list-links,
+.tarot-links {
+    display: flex;
+    justify-content: center;
+}
 
 
 @media screen and (max-width: 1000px) {
