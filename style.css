@@ -407,11 +407,11 @@ button {
 }
 
 
-button:link { 
+button a:link { 
     text-decoration: none;
     color: white;
 }
-a:visited { 
+button a:visited { 
     text-decoration: none; 
     color: white;
 }
