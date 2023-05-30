@@ -205,7 +205,7 @@ a:link {
  }
 
 
-
+/* 
  .list p  a:active {
     color: black;
  }
@@ -246,7 +246,7 @@ a:link {
 .tarot p a:visited, 
 .tarot p a:link {
     color: black;
- }
+ } */
 
 @media screen and (max-width: 1000px){
     header{
