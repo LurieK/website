@@ -205,48 +205,6 @@ a:link {
  }
 
 
-/* 
- .list p  a:active {
-    color: black;
- }
- 
- .list p a:hover {
-    text-decoration: underline;
-    font-weight: 400;
-}
-
-.list p a:visited, 
-.list p a:link {
-    color: black;
- }
-
- .google p  a:active {
-    color: black;
- }
- 
- .google p a:hover {
-    text-decoration: underline;
-    font-weight: 400;
-}
-
-.google p a:visited, 
-.google p a:link {
-    color: black;
- }
-
- .tarot p  a:active {
-    color: black;
- }
- 
- .tarot p a:hover {
-    text-decoration: underline;
-    font-weight: 400;
-}
-
-.tarot p a:visited, 
-.tarot p a:link {
-    color: black;
- } */
 
 @media screen and (max-width: 1000px){
     header{
@@ -469,6 +427,10 @@ button:hover {
         
        
     }
+    .port-btns {
+        display: flex;
+        justify-content: center;
+    }
 
     .responisive-google {
         display: flex;
@@ -511,30 +473,36 @@ button:hover {
     }
 
     .google-text-responisive {
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
     }
 
     .list-text-responisive {
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
     }
 
     .tarot-text-responisive {
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-flow: column;
     }
 
-    .list-text-responisive a, 
-    .google-text-responisive a,
-    .tarot-text-responisive a {
-        text-decoration: underline;
-        color: black;
-        
-    }
+    
 
     button {
-        width: 75% ;
+        background-color: #2B3242;
+        border: 3px solid white;
+        color: white;
+        padding: 15px;
+        margin-right: 5px;
+        font-family: 'Roboto';
+        font-size: 17px;
     }
      
 }
