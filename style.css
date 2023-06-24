@@ -109,6 +109,7 @@ header {
     background-color: #2B3242;
     display: flex;
     justify-content: space-between;
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,1);
 }
 
 .opening {
