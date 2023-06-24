@@ -150,7 +150,7 @@ header {
     flex-direction: column;
 }
 
-.opening-links {
+.responsive-opening {
     display: none;
 }
 
@@ -201,24 +201,38 @@ a:link {
         display: none;
     }
 
+    .responsive-opening {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+    }
+
     .opening h1 {
         font-size: 85px;
     }
 
     .img-container {
-        width: 75%;
-        height: auto;
-        display: flex;
-        justify-content: center;
+        display: none;
         
     }
 
-    .opening-img {
+    .res-img-container {
+        width: 75%;
+        height: auto;
+        /* margin-left: 25px; */
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .res-opening-img {
         width: 75%;
     }
 
     .opening h1 {
-        margin-bottom: 20%;
+        margin-bottom: 5%;
     }
 
     .opening-links {
