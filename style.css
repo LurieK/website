@@ -205,6 +205,14 @@ a:link {
         font-size: 85px;
     }
 
+    .img-container {
+        width: 75%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        
+    }
+
     .opening-img {
         width: 75%;
     }
