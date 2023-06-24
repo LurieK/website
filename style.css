@@ -265,7 +265,6 @@ a:link {
     }
 }
 .portfolio h2 {
-    color: blank;
     font-size: 70px;
     text-align: center;
     margin-top: 0;
@@ -275,7 +274,8 @@ a:link {
 }
 
 .portfolio {
-    background-color: #F6F6F6;
+    background-color: #e2e0e0b0;
+    ;
     margin-top: 16px;
     align-content: center;
     align-items: center;
@@ -477,7 +477,7 @@ button:hover {
 }
 
 .about {
-    background-color: #e2e0e0b0;
+    background-color: #F6F6F6;
     display: flex;
     justify-content: center;
     flex-flow: row;
