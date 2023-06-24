@@ -130,8 +130,15 @@ header {
     font-family: 'Montserrat';
 }
 
+.img-container{
+    width: 50%;
+    height: 650px;
+    overflow: hidden;
+}
+
 .opening-img {
-    width: 55%;
+    width: 100%;
+    height: auto;
 }
 
 .opening-text {
