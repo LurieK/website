@@ -186,7 +186,7 @@ a:link {
     text-decoration: none;
     border: none;
 }
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1350px) {
     .img-container {
         width: 50%;
         height: 810px;
@@ -317,7 +317,6 @@ a:link {
 .portfolio {
     background-color: #e2e0e0b0;
     ;
-    margin-top: 16px;
     align-content: center;
     align-items: center;
     justify-content: center;
