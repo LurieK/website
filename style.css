@@ -43,7 +43,6 @@ p {
     font-size: 18px;
 }
 
-
 .menu {
     display: flex;
     flex-direction: row;
@@ -236,8 +235,6 @@ a:link {
         justify-content: center;
         margin-bottom: 10%;
     }
-
-
 
     .res-opening-img {
         width: 75%;
@@ -524,8 +521,6 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-flow: row;
-    
-
 }
 
 .about p {
@@ -544,7 +539,6 @@ button:hover {
     align-items: center;
     flex-flow: column;
 }
-
 
 @media screen and (min-width: 1000px) {
     .about img {
