@@ -553,6 +553,9 @@ button:hover {
 .tech-img {
     display: flex;
     flex-direction: row;
+}
+
+.tech-img img {
     width: 30px;
 }
 
