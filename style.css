@@ -545,19 +545,6 @@ button:hover {
     flex-flow: column;
 }
 
-/* .tech {
-    display: flex;
-    flex-flow: column;
-} */
-
-.tech-img {
-    display: flex;
-    flex-direction: row;
-}
-
-.tech-img img {
-    width: 50px;
-}
 
 
 @media screen and (min-width: 1000px) {
