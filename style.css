@@ -141,6 +141,9 @@ header {
 .opening-img {
     width: 100%;
     height:max-content;
+    opacity: 0; /* Start with opacity 0 to make it appear gradually */
+    transform: translateX(100%); /* Move the container to the right initially */
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .opening-text {
@@ -149,8 +152,14 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    opacity: 0; /* Start with opacity 0 to make it appear gradually */
+    transition: opacity 2s ease; 
 }
 
+.animate-slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}
 .responsive-opening {
     display: none;
 }
