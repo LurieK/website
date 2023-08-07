@@ -1,8 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F6F6F6;
+    margin: 0;
+    padding: 0;
 }
-
 
 header {
     background-color: #2B3242;
@@ -31,7 +32,6 @@ header ul li a {
 header ul li a:hover {
     text-decoration: underline;
 }
-
 
 article {
     margin: 20px;
