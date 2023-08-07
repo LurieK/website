@@ -1,4 +1,11 @@
-/* CSS for the blog page */
+@font-face {
+    font-family: 'Bogart';
+    src: url('transfonter.org-20230409-074459/BogartTrial-Regular.woff2') format('woff2'),
+        url('transfonter.org-20230409-074459/BogartTrial-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
