@@ -3,6 +3,34 @@ body {
     line-height: 1.6;
 }
 
+
+header {
+    background-color: #2B3242;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
 article {
     margin: 20px;
 }
