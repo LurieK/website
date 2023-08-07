@@ -1,0 +1,74 @@
+/* CSS for the blog page */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F6F6F6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2B3242;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    margin: 50px;
+}
+
+.main-content h1 {
+    font-size: 50px;
+    color: #2B3242;
+}
+
+.main-content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.blog-post {
+    margin-bottom: 50px;
+}
+
+.blog-post h2 {
+    font-size: 30px;
+    color: #2B3242;
+}
+
+.blog-post p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.blog-post a {
+    color: #2B3242;
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
