@@ -16,8 +16,6 @@ body {
 
 header {
     background-color: #2B3242;
-    display: flex;
-    justify-content: space-between;
     padding: 20px 50px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
@@ -25,6 +23,9 @@ header {
 header ul {
     display: flex;
     list-style: none;
+    display: flex;
+    justify-content: center;
+    
 }
 
 header ul li {
