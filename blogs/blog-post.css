@@ -100,3 +100,14 @@ code {
     width: 25%;
     height: 40%;
 }
+
+@media screen and (max-width: 1000px){
+    .img1cell,
+    .img2cell,
+    .img2computer,
+    .img1computer,
+    .img3cell,
+    .img3computer {
+        width: 50%;
+    }
+}
