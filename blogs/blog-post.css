@@ -110,4 +110,15 @@ code {
     .img3computer {
         width: 50%;
     }
+
+    .blog-images {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .blog-links{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
 }
