@@ -444,6 +444,7 @@ button:hover {
     .port-btns {
         display: flex;
         justify-content: center;
+        flex-flow: column;
     }
 
     .responisive-google {
