@@ -97,11 +97,32 @@ code {
 .img2cell,
 .img3cell,
 .img3computer {
-    width: 25%;
-    height: 40%;
+    width: 50%
+    
 }
 
-@media screen and (max-width: 1000px){
+.blog-links{
+    width: 50%;
+    margin-left: 30px;
+   
+    
+}
+
+.blog-images {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+.closing {
+    display: flex;
+    flex-flow: row;
+
+}
+
+@media screen and (max-width: 900px){
     .img1cell,
     .img2cell,
     .img2computer,
@@ -121,5 +142,15 @@ code {
         flex-flow: column;
         align-items: center;
         margin-bottom: 10px;
+        margin-left: 0px;
+        width: 100%;
+        
+    }
+
+    .closing {
+        display:flex;
+        flex-flow: column;
+        align-items: center;
+
     }
 }
