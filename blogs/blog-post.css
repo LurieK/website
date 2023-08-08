@@ -84,8 +84,19 @@ pre {
     background-color: #f5f5f5;
     padding: 10px;
     border-radius: 5px;
+    overflow: scroll;
 }
 
 code {
     font-family: 'Courier New', Courier, monospace;
+}
+
+.img1computer,
+.img2computer,
+.img1cell,
+.img2cell,
+.img3cell,
+.img3computer {
+    width: 25%;
+    height: 40%;
 }
