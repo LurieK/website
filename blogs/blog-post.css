@@ -120,5 +120,6 @@ code {
         display: flex;
         flex-flow: column;
         align-items: center;
+        margin-bottom: 10px;
     }
 }
