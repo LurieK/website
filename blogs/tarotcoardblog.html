@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="blog-post.css" />
+    <title>Lurie Kimmerle</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Montserrat:wght@100;200&family=Open+Sans:wght@300&family=Questrial&display=swap');
+    </style>
+</head>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/luriekimmerle/">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://github.com/luriek">GitHub</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+        </ul>
+        </nav>
+    </header>
+    <body>
+    <article>
+        <p><a href="./blog.html">Back</a></p>
+        <h1>My Journey Building a Tarot Card Reading Application with ChatGPT</h1>
+        
+        <section>
+            <h2>Introduction</h2>
+            <p>I embarked on an exciting journey to build a Tarot Card Reading application using ChatGPT and an API. The motivation behind this project was my fascination with how technology, particularly AI, can impact various fields, including spirituality. I wanted to create a tool that could provide different interpretations of tarot cards, offering a unique reading each time.</p>
+        </section>
+        <section>
+            <h2>Why I Built the Tarot Card Reading Application</h2>
+            <p>I built this application because I was excited about how ChatGPT could understand and interpret the principles of spirituality. Writing out 78 different interpretations for tarot cards can be tedious and stagnant. I was thrilled about creating something that gave different answers every time that were still accurate and applicable. This project was an opportunity for me to explore the intersection of technology and spirituality, and to provide a tool for independent exploration of ideas, free from the influence of potentially dangerous leaders or gurus.</p>
+        </section>
+        <section>
+            <h2>How the Application Works</h2>
+            <p>The application offers users two options: they can select a card from the drop-down menu or let the site choose a random card via a function that uses Math.random from the cards object array. The chosen card is then passed through a fetch API which prompts ChatGPT to read the card and give a reading. This reading is then returned to the user, providing a unique interpretation each time.</p>
+        </section>
+        <section>
+            <h2>My Approach to Building the Application</h2>
+            <p>I built this application off of a very simple vanilla JS function. I originally used an if/else statement, then updated it to a switch. However, after updating the program to make it modular, I also wanted to simplify the code so I changed the switch to findIndex. I also made it modular so it was easier to update and read.</p>
+        </section>
+        <section>
+            <h3>Challenges I Faced</h3>
+            <p>Building something with an API was a new experience for me, and it was exciting to explore all the possibilities an API presents. Particularly with ChatGPT, writing the right prompt is key to getting the API to return what I want. </p>
+            <p>I also learned a lot about protecting data and how essential an .env file is with APIs. Initially, the API wasn't working, and that required me to dive deeper into understanding how fetch APIs work. In the end, I had multiple syntax errors that were causing a mistake.</p>
+            <p>Another challenge I experienced was an issue with designing the CSS for the cards and the response without having to log a new card every time. To solve this, I added a dummy description and card to the HTML, designed the layout, and then applied it to the CSS for the description and card return.</p>
+        </section>
+        <section>
+            <h2>Future Improvements</h2>
+            <p>For the future, I want to add a journal aspect to this site which will be connected to each user. So users can log in and save their daily readings. I also want to add a prompt to the site, so users can put in a certain situation they are looking for answers to and get responses related to a specific question.  This will ultimately require me to build out a backend that will store usernames, passwords, journal entries, and card readings history. </p>
+        </section>
+        <section>
+            <h2>Conclusion</h2>
+            <p>Building the Tarot Card Reading application was a rewarding experience that taught me valuable lessons about APIs, data protection, and frontend development. The challenges I faced and the solutions I found have enriched my understanding of these technologies and have inspired me to continue exploring and learning.</p>
+        </section>
+        <section class="closing">
+            <div class="blog-links">
+                <h3><a alt="link to live project"target="_blank" href="https://github.com/LurieK/tarot.git">View this project live here</a></h3>
+                <h3><a alt="Link to project on Github"target="_blank" href="https://luriek.github.io/Tarot-Reading/">View this project on GitHub</a></h3>
+            </div>
+            <div class="blog-images">
+                <img alt="image of project" class="img2cell" src="../img/tarot_mobile.png">
+                <img alt="image of project" class="img2computer" src="../img/tarot_laptop.png">
+            </div>
+        </section>
+    </article>
+    
+    
+</body>
+</html>
