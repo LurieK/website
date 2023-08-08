@@ -70,13 +70,16 @@ p {
 }
 
 a:link {
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
 }
 
+.blog-links a:link {
+    text-decoration: underline;
+    color:black;
+}
 
-
-.closing a:visited {
+.blog-links a:visited {
     color: black;
 }
 
