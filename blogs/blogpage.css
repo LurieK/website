@@ -80,6 +80,19 @@ header ul li a:hover {
     text-decoration: none;
 }
 
+.full-preview{
+    display: flex;
+    flex-flow: row;
+}
+
+.blog-image {
+    width: 25%;
+}
+
+.blog-image-gpt {
+    
+}
+
 .blog-post a:hover {
     text-decoration: underline;
 }
