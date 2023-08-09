@@ -90,7 +90,8 @@ header ul li a:hover {
 }
 
 .blog-image-gpt {
-    
+    width: 20%;
+    margin-right: 10px;
 }
 
 .blog-post a:hover {
