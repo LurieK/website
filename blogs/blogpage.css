@@ -97,3 +97,15 @@ header ul li a:hover {
 .blog-post a:hover {
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 800px) {
+    .blog-image {
+        width: 60%;
+        align-self: center;
+    }
+    .full-preview {
+        display: flex;
+        flex-flow: column;
+    }
+}
+
