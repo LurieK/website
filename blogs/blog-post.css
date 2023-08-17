@@ -125,6 +125,19 @@ code {
 
 }
 
+.CA-logo {
+    float: left;
+    width: 400px;
+    
+}
+
+.scrimba-logo {
+    float: right;
+    width: 400px;
+    margin-left: 20px;
+    
+}
+
 @media screen and (max-width: 900px){
     .img1cell,
     .img2cell,
