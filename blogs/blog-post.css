@@ -138,6 +138,10 @@ code {
     
 }
 
+li a:visited{
+    color: #353434;;
+}
+
 @media screen and (max-width: 900px){
     .img1cell,
     .img2cell,
