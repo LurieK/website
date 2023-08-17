@@ -86,12 +86,19 @@ header ul li a:hover {
 }
 
 .blog-image {
-    width: 25%;
+    width: 250px;
+    margin-right: 20px;
 }
 
 .blog-image-gpt {
-    width: 20%;
-    margin-right: 10px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.blog-image-JS-React{
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
 }
 
 .blog-post a:hover {
@@ -100,9 +107,20 @@ header ul li a:hover {
 
 @media only screen and (max-width: 800px) {
     .blog-image {
+        width: 80%;
+        align-self: center;
+    }
+
+    .blog-image-JS-React{
         width: 60%;
         align-self: center;
     }
+
+    .blog-image-gpt{
+        width: 60%;
+        align-self: center;
+    }
+
     .full-preview {
         display: flex;
         flex-flow: column;
