@@ -138,9 +138,23 @@ code {
     
 }
 
-li a:visited{
-    color: #353434;;
+li a.link-in-blog {
+    color: #0000FF; /* Blue color before it's clicked */
 }
+
+li a.link-in-blog:visited {
+    color: #353434; /* Dark color after it's clicked */
+}
+
+li a.in-li-link {
+    color: #353434; /* Dark color */
+    text-decoration: underline; /* Underlined */
+}
+
+li a.in-li-link:visited {
+    color: #353434; /* Dark color after it's clicked */
+}
+
 
 @media screen and (max-width: 900px){
     .img1cell,
