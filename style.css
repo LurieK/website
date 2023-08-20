@@ -255,6 +255,11 @@ a:link {
         margin-right: 10px;
     }
 
+    .opening-links li img {
+        width: 60px;
+        height: auto;
+    }
+
     .github-img {
         width: 30px;
         height: 30px;
