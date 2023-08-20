@@ -187,6 +187,26 @@ a:link {
     text-decoration: none;
     border: none;
 }
+
+.opening-icons{
+    display: flex;
+    flex-direction: row;
+    list-style: none;        
+    color: black;
+    
+    margin-bottom: 0;
+    margin-top: 0 ;
+    margin-right: 10px;
+    
+    padding-top: 30px;
+    padding-left: 0;
+}
+
+.opening-icons li img{
+    width: 50px;
+    height: auto;
+}
+
 @media screen and (min-width: 1350px) {
     .img-container {
         width: 50%;
@@ -234,7 +254,7 @@ a:link {
         height: auto;
         display: flex;
         justify-content: center;
-        margin-bottom: 10%;
+    
     }
 
     .res-opening-img {
@@ -245,7 +265,7 @@ a:link {
         margin-bottom: 5%;
     }
 
-    .opening-icons {
+    /* .opening-icons {
         display: flex;
         flex-direction: row;
         list-style: none;
@@ -254,7 +274,7 @@ a:link {
         margin-top: 0;
         padding-left: 0;
         margin-right: 10px;
-    }
+    } */
 
     .opening-icons li img {
         width: 50px;
