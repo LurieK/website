@@ -206,6 +206,7 @@ a:link {
     .opening {
         display: flex;
         flex-direction: column;
+        padding-bottom: 20px;
     }
 
     .desktop-opening {
@@ -244,7 +245,7 @@ a:link {
         margin-bottom: 5%;
     }
 
-    .opening-links {
+    .opening-icons {
         display: flex;
         flex-direction: row;
         list-style: none;
@@ -255,8 +256,8 @@ a:link {
         margin-right: 10px;
     }
 
-    .opening-links li img {
-        width: 60px;
+    .opening-icons li img {
+        width: 50px;
         height: auto;
     }
 
@@ -269,22 +270,7 @@ a:link {
         width: 30px;
     }
 
-    .opening-links a:hover {
-        cursor: pointer;
-        font-weight: bold;
-        text-decoration: underline;
-    }
-
-    .opening-links li a {
-        font-family: 'Montserrat';
-        font-weight: 100;
-        font-size: 18px;
-        text-decoration: none;
-        color: black;
-        display: flex;
-        flex-direction: row;
-    }
-
+    
     .subtitle {
         display: flex;
         flex-flow: column;
