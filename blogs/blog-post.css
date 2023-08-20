@@ -139,21 +139,23 @@ code {
 }
 
 li a.link-in-blog {
-    color: #0000FF; /* Blue color before it's clicked */
+    color: #0000FF; 
 }
 
 li a.link-in-blog:visited {
-    color: #353434; /* Dark color after it's clicked */
+    color: #353434; 
 }
 
 li a.in-li-link {
-    color: #353434; /* Dark color */
-    text-decoration: underline; /* Underlined */
+    color: #353434;
+    text-decoration: underline;
 }
 
 li a.in-li-link:visited {
-    color: #353434; /* Dark color after it's clicked */
+    color: #353434; 
 }
+
+
 
 
 @media screen and (max-width: 900px){
@@ -186,5 +188,19 @@ li a.in-li-link:visited {
         flex-flow: column;
         align-items: center;
 
+    }
+
+    .responsive-section{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .CA-logo{
+        align-self: center;
+    }
+
+    .scrimba-logo{
+        align-self: center;
+        width: 300px;
     }
 }
