@@ -265,19 +265,12 @@ a:link {
         margin-bottom: 5%;
     }
 
-    /* .opening-icons {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        color: black;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding-left: 0;
-        margin-right: 10px;
-    } */
+    .opening-icons {
+        padding-top: 0;
+    }
 
     .opening-icons li img {
-        width: 50px;
+        width: 40px;
         height: auto;
     }
 
