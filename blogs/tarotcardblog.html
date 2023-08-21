@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,100 +13,102 @@
     </style>
 </head>
 
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Portfolio</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/luriekimmerle/">LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://github.com/luriek">GitHub</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/luriekimmerle/">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://github.com/luriek">GitHub</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
         </ul>
-        </nav>
-    </header>
-    <body>
+    </nav>
+</header>
+
+<body>
     <article>
         <p><a href="./blog.html">Back</a></p>
         <h1>My Journey Building a Tarot Card Reading Application with ChatGPT</h1>
-        
+
         <section>
             <h2>Introduction</h2>
-            <p>Beginning the journey building a Tarot Card Reading site using the 
-                ChatGPT API, was motivated by my fascination with how technology, 
-                particularly AI, can impact various fields, including spirituality. I wanted to create a 
-                tool that could provide different interpretations of tarot cards every time a card is 
+            <p>Beginning the journey building a Tarot Card Reading site using the
+                ChatGPT API, was motivated by my fascination with how technology,
+                particularly AI, can impact various fields, including spirituality. I wanted to create a
+                tool that could provide different interpretations of tarot cards every time a card is
                 returned on the screen, offering a unique reading each time.</p>
         </section>
         <section>
             <h2>Why I Built the Tarot Card Reading Application</h2>
-            <p>I built this application because I was excited about how ChatGPT could understand and 
-                interpret the principles of spirituality. Writing out 78 different interpretations 
-                for tarot cards can be tedious, but even more it is a stagnant experince for users.  Once they read the interpretation 
-            , there is no more knowledge to gain. I was thrilled about creating something 
-                that gave different answers every time that were still accurate and applicable. 
-                This project was an opportunity for me to explore the intersection of technology 
-                and spirituality, and to provide a tool for independent exploration of ideas, free 
-                from the influence of of other readers.</p>
+            <p>I built this application because I was excited about how ChatGPT could understand and
+                interpret the principles of spirituality. Writing out 78 different interpretations
+                for tarot cards can be tedious, but even more it is a stagnant experince for users. Once they read the
+                interpretation, there is no more knowledge to gain. I was thrilled about creating something
+                that was accurate and applicable that also gave different interpretations every time.
+                This project was an opportunity for me to explore the intersection of technology
+                and spirituality, and to provide a tool for independent exploration of ideas, free
+                from the influence of of other tarot readers.</p>
         </section>
         <section>
             <h2>How the Application Works</h2>
-            <p>The application offers users two options: they can select a card from the drop-down 
-                menu or let the site choose a random card via a function that uses Math.random from 
-                the cards object array. The chosen card is then passed through a fetch API which 
-                prompts ChatGPT to read the card and give a reading. This reading is then returned 
+            <p>The application offers users two options: they can select a card from the drop-down
+                menu or let the site choose a random card via a function useing Math.random from
+                the cards object array. The chosen card is then passed through a fetch API which
+                prompts ChatGPT to read the card and give a reading. This reading is then returned
                 to the user, providing a unique interpretation each time.</p>
         </section>
         <section>
             <h2>My Approach to Building the Application</h2>
-            <p>I built this application off of a very simple vanilla JS function. I originally used an 
-                if/else statement, then updated it to a switch. However, after updating the program to 
+            <p>I built this application off of a very simple vanilla JS function. I originally used an
+                if/else statement, then updated it to a switch. However, after updating the program to
                 make it modular, I also wanted to simplify the code so I changed the switch to findIndex.
-                This not only looks much cleaner, but is far easier to update.  Previously when I wanted to 
-                adjust the information in the object array containing the cards names, I needed to update the object 
-                as well as the switch.  Now I only need to update the object.
-                </p>
+                This not only looks much cleaner, but is far easier to update. Previously when I wanted to
+                adjust the information in the object array containing the cards names, I needed to update the object
+                as well as the switch. Now I only need to update the object.
+            </p>
         </section>
         <section>
             <h3>Challenges I Faced</h3>
-            <p>Building something with an API was a new experience for me, and it was exciting to explore all
-                 the possibilities an API presents. Particularly with ChatGPT, writing the right prompt is 
-                 key to getting the API to return what I want, and I had to try multople different versions of prompts
-                  before I got card interpretations that worked for the site.  </p>
-            <p>I also learned a lot about protecting data and how essential an .env file is with APIs. Initially the api 
-                was available for anyone to read on github.  Going back to hide it was a long process that also stretched my
-                skills around creating new branches, merging branches, and cloning repos. 
-                </p>
-            <p>Another challenge I experienced was an issue with designing the CSS for the 
-                cards and the response without having to log a new card every time to see if the css worked.
-                 To solve this, I added a dummy description and card to the HTML, designed the layout, and then 
-                applied it to the CSS for the description and card return.</p>
+            <p>Building something with an API is one thing and comes with it's own challenges. However writing one with
+                ChatGPT also means writing the right prompt so the API will return what I want.
+                Meaning, I had to try multiple different versions of prompts
+                before I got card interpretations that were correct and worked for the site. </p>
+            <p> This project also presented me with a great opportunity to utilize backend frameworks: Express and CORS.
+                By building a small backend with the Express framework, I was able to set up routes, handle HTTP
+                requests, and manage the server-side logic. The integration of CORS (Cross-Origin Resource Sharing) was
+                set up to ensure security measures and enable cross-origin requests. This allowed me to ensure
+                communication between the frontend and backend without revealing my API key.
+
+            </p>
         </section>
         <section>
             <h2>Future Improvements</h2>
-            <p>The next level for this project is in creating a backend. I want to add a journal 
-                aspect to this site which will be connected to each user. Users can log in and save 
-                their thoughts and the daily readings. I also want to add a prompt to the site, so 
-                users can put in a certain situation they are looking for answers to and get responses 
-                related to a specific question. </p>
+            <p>The next level for this project is in creating a more robust backend. I want to add a journal
+                aspect to this site which will be password protected and stored for each user. Users can log in and save
+                their thoughts about their daily readings. I also want to add a prompt section to the site, allowing
+                users to put in a specific question they are looking for answers to, so the responses
+                related to a specific situation. </p>
         </section>
         <section>
             <h2>Conclusion</h2>
-            <p>Building the Tarot Card Reading application was a rewarding experience that taught 
-                me valuable lessons about APIs, data protection, and frontend development. 
-                The challenges I faced and the solutions I found have enriched my understanding of 
-                these technologies and have inspired me to continue exploring and learning.</p>
+            <p>Building the Tarot Card Reading application was an oppertunity to merge two interests and explore a
+                little bit of backend development.
+                I am excited to continue to grow this project and create something people can use daily to enhance their
+                life.</p>
         </section>
         <section class="closing">
             <div class="blog-links">
-                <h3><a alt="link to live project"target="_blank" href="https://daily-tarot-nt1n1fsat-luriek.vercel.app/">View this project live here</a></h3>
-                <h3><a alt="Link to project on Github"target="_blank" href="https://github.com/LurieK/DailyTarot.git">View this project on GitHub</a></h3>
+                <h3><a alt="link to live project" target="_blank"
+                        href="https://daily-tarot-nt1n1fsat-luriek.vercel.app/">View this project live here</a></h3>
+                <h3><a alt="Link to project on Github" target="_blank"
+                        href="https://github.com/LurieK/DailyTarot.git">View this project on GitHub</a></h3>
             </div>
             <div class="blog-images">
                 <img alt="image of project" class="img2cell" src="../img/tarot_mobile.png">
@@ -113,7 +116,8 @@
             </div>
         </section>
     </article>
-    
-    
+
+
 </body>
+
 </html>
