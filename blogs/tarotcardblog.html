@@ -39,8 +39,8 @@
 
         <section>
             <h2>Introduction</h2>
-            <p>Beginning the journey building a Tarot Card Reading site using the
-                ChatGPT API, was motivated by my fascination with how technology,
+            <p>Beginning the journey of building a Tarot Card Reading site using the
+                ChatGPT API, I was motivated by my fascination with how technology,
                 particularly AI, can impact various fields, including spirituality. I wanted to create a
                 tool that could provide different interpretations of tarot cards every time a card is
                 returned on the screen, offering a unique reading each time.</p>
@@ -49,20 +49,20 @@
             <h2>Why I Built the Tarot Card Reading Application</h2>
             <p>I built this application because I was excited about how ChatGPT could understand and
                 interpret the principles of spirituality. Writing out 78 different interpretations
-                for tarot cards can be tedious, but even more it is a stagnant experince for users. Once they read the
+                for tarot cards can be tedious, but even more, it is a stagnant experience for users. Once they read the
                 interpretation, there is no more knowledge to gain. I was thrilled about creating something
                 that was accurate and applicable that also gave different interpretations every time.
                 This project was an opportunity for me to explore the intersection of technology
                 and spirituality, and to provide a tool for independent exploration of ideas, free
-                from the influence of of other tarot readers.</p>
+                from the influence of other tarot readers.</p>
         </section>
         <section>
             <h2>How the Application Works</h2>
             <p>The application offers users two options: they can select a card from the drop-down
-                menu or let the site choose a random card via a function useing Math.random from
+                menu or let the site choose a random card via a function using Math.random from
                 the cards object array. The chosen card is then passed through a fetch API which
-                prompts ChatGPT to read the card and give a reading. This reading is then returned
-                to the user, providing a unique interpretation each time.</p>
+                prompts ChatGPT to read the card and return an interpretation. This reading is then returned
+                to the user, providing a unique reading each time a card is selected.</p>
         </section>
         <section>
             <h2>My Approach to Building the Application</h2>
@@ -70,22 +70,23 @@
                 if/else statement, then updated it to a switch. However, after updating the program to
                 make it modular, I also wanted to simplify the code so I changed the switch to findIndex.
                 This not only looks much cleaner, but is far easier to update. Previously when I wanted to
-                adjust the information in the object array containing the cards names, I needed to update the object
-                as well as the switch. Now I only need to update the object.
+                adjust the information in the object array containing the cards' names, I needed to update the object
+                as well as the switch. Now I only need to update the object, and findIndex takes care of the rest.
             </p>
         </section>
         <section>
             <h3>Challenges I Faced</h3>
-            <p>Building something with an API is one thing and comes with it's own challenges. However writing one with
-                ChatGPT also means writing the right prompt so the API will return what I want.
-                Meaning, I had to try multiple different versions of prompts
-                before I got card interpretations that were correct and worked for the site. </p>
+            <p>Building something with an API is one thing and comes with its own challenges. However, writing one with
+                ChatGPT also means writing the right prompt so the API will return exactly what I want and not
+                hallucinate. Meaning, I had to try multiple different versions of prompts
+                before I got the type of card interpretations that were correct and worked for the site. My primary
+                technique when engineering prompts is to write like I am talking to a very smart five-year-old. Making sure my question
+                is as specific as possible, and doesn't leave room for the AI to return answers unrelated to the topic, or made up.</p>
             <p> This project also presented me with a great opportunity to utilize backend frameworks: Express and CORS.
                 By building a small backend with the Express framework, I was able to set up routes, handle HTTP
                 requests, and manage the server-side logic. The integration of CORS (Cross-Origin Resource Sharing) was
                 set up to ensure security measures and enable cross-origin requests. This allowed me to ensure
                 communication between the frontend and backend without revealing my API key.
-
             </p>
         </section>
         <section>
@@ -94,14 +95,16 @@
                 aspect to this site which will be password protected and stored for each user. Users can log in and save
                 their thoughts about their daily readings. I also want to add a prompt section to the site, allowing
                 users to put in a specific question they are looking for answers to, so the responses
-                related to a specific situation. </p>
+                are related to a specific situation.</p>
         </section>
         <section>
             <h2>Conclusion</h2>
-            <p>Building the Tarot Card Reading application was an oppertunity to merge two interests and explore a
+            <p>Building the Tarot Card Reading application was an opportunity to merge two interests and explore a
                 little bit of backend development.
                 I am excited to continue to grow this project and create something people can use daily to enhance their
                 life.</p>
+        </section>
+        
         </section>
         <section class="closing">
             <div class="blog-links">
