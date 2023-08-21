@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,83 +13,88 @@
     </style>
 </head>
 
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Portfolio</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/luriekimmerle/">LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://github.com/luriek">GitHub</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/luriekimmerle/">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://github.com/luriek">GitHub</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
         </ul>
-        </nav>
-    </header>
-    <body>
+    </nav>
+</header>
+
+<body>
     <article>
         <p><a href="./blog.html">Back</a></p>
         <h1>My Journey Building a React To-Do List: Challenges, Solutions, and Insights</h1>
-        
+
         <section>
             <h2>Introduction</h2>
-            <p>In this blog post, I'll share my journey of building the application 
-                using React useState, useEffect, and LocalStorage. This application is not your typical to-do list; it's designed to help 
-                users manage their tasks in three distinct categories: work, life, and pleasure or 
-                self-care. This project was an opportunity for me to expand my skills in React, using a 
-                vanilla JS CRUD app I had previously built as a framework.</p>
+            <p>In this blog post, I'll share my journey building a to-do list application
+                using React useState, useEffect, and LocalStorage. This application is not your typical to-do list; it's
+                designed to help
+                users manage their tasks in three distinct categories: work, life, and pleasure or
+                self-care. </p>
         </section>
         <section>
             <h2>Why I Built the To-Do List Application</h2>
-            <p>The motivation behind this project was twofold. First, I wanted to expand on a vanilla 
-                JS CRUD app I had already built, this time using React. This gave me a chance to delve 
-                utilized React's capabilities and play more with its intricacies. Second, as a coach, 
-                I had always encouraged my clients to break their to-do list into three parts: work, life, and 
-                pleasure or self-care. I wanted to apply this idea to a project that I could use every day, 
+            <p>The motivation behind this project was twofold. First, I wanted to expand on a vanilla
+                JS CRUD app I had already built, this time using React. This gave me a chance to
+                utilized React's capabilities, particularly componenets, useState, and useEffect. Second, as a coach,
+                I had always encouraged my clients to break their to-do list into three parts: work, life, and
+                pleasure or self-care. I wanted to apply this idea to a project that I could use every day,
                 creating something that would help me manage my daily tasks in a more organized and efficient way.</p>
         </section>
         <section>
             <h2>How the Application Works</h2>
-            <p>The To-Do List application is designed to help users manage their tasks in three 
-                distinct categories: work, life, and pleasure. Items related to their profession 
+            <p>The To-Do List application is designed to help users manage their tasks in three
+                distinct categories: work, life, and pleasure. Items related to their profession
                 go in the work list, items related to life like grocery shopping or making a dentist
-                 appointment go in the life list. Lastly, pleasure, which is anything that adds extra
-                  joy to life, goes on the pleasure list. This list is vital because it often comprises 
-                  the things we let go by the wayside when things get busy but are often the very things 
-                  we need the most.</p>
+                appointment go in the life list. Lastly, pleasure, which is anything that adds extra
+                joy to life, goes on the pleasure list. This list is vital because it often comprises
+                the things we let go by the wayside when life gets busy, however they are often the very things
+                we need during hectic times. Personally, it is the small pleasurable moments, like a walk, dinner
+                with my partner, or a book before bed, that allow my mind the rejuvenation needed to work effectively
+            </p>
         </section>
-        
+
         <section>
             <h2>My Approach to Building the Application</h2>
-            <p>I was particularly excited to play with components when 
-                building this app. At first, I built it in one App.js file, 
-                and although it was functional, I knew multiple components 
-                would make it far easier to update and change as the 
-                project grew. </p>
+            <p>I was particularly excited to play with components when
+                building this app. Origionally built in vanilla JS, when I first put this project into React, I built it
+                in one App.js file.
+                Although it was functional, I knew multiple components
+                would make it far easier to update and change as the
+                project grew.</p>
         </section>
         <section>
             <h3>A Specific Challenge: Persisting To-Do Items in LocalStorage</h3>
-            <p>While building the To-Do List application, I encountered a specific challenge that became a 
-                significant learning opportunity. The expectation was that items would be added to a to-do list, 
-                and when the page was refreshed, the items would stay in LocalStorage and render back on the screen. 
-                Only when the clear button was hit would the items be cleared from the list.</p>
-            <p>However, I found that white items were being added to the list and also being added to 
+            <p>While building the To-Do List application, I encountered a specific challenge that became a
+                significant learning opportunity. The expectation was that items would be added to a to-do list,
+                and when the page was refreshed, the items would stay in LocalStorage and render back on the screen.
+                Only when the clear button was hit did I want the items be cleared from the list.</p>
+            <p>However, I found that while items were being added to the list and also being added to
                 LocalStorage, and the clear button was correctly clearing the LocalStorage when clicked.
-                When I refreshed the page, however, the items were also being removed from the list, and LocalStorage 
-                 was cleared. Which defeated the whole point of storing items in LocalStorage.</p>
+                When I refreshed the page, the items were also being removed from the list, and LocalStorage
+                was cleared. Which defeated the whole point of storing items in LocalStorage.</p>
         </section>
         <section>
             <h3>The Solution</h3>
-            <p>The issue was related to how the `todos` state was updated in the `TodoList` component. 
-                React batches state updates that happen during event handlers and lifecycle methods, but 
-                it doesn't batch updates that happen in asynchronous callbacks. In the `useEffect` hook within 
-                `useLocalStorageTodos`, I had written `setTodos` method to be called inside a try-catch block to check for errors.
-                Yet, this resulted in an unbatched state update, leading to LocalStorage ultimate being empty when refreshed.  The corrected code looks like this :</p>
+            <p>The issue was related to how the state was being updated in my component rendering my list. React batches
+                state updates that happen during event handlers and lifecycle methods, but it doesn't batch updates that
+                happen in asynchronous callbacks. In the useEffect hook within my component dealing with LocalStorage, I
+                had been calling a useEffect method inside a try-catch block to check for errors. Yet, this resulted in
+                an unbatched state update, leading to LocalStorage ultimately being empty when refreshed. To correct
+                this, I had to move all my useState methods outside of the try-catch block like this:</p>
             <pre><code>// useLocalStorageTodos.js
     ...
     const savedTodos = JSON.parse(localStorage.getItem('todos') || '{}');
@@ -105,28 +111,31 @@
     return [todos, setTodos];
     ...
     </code></pre>
-            <p>This way, the initial value of the `todos` state was immediately set to whatever was 
-                currently in LocalStorage when the hook was first run, rather than being updated in a 
-                `useEffect` callback. This eliminated the need for an extra render to update `todos`, 
-                ensuring that the data was present even if the page was quickly refreshed.</p>
-        
+            <p>This way, the initial value of the `todos` state was immediately set to whatever was
+                currently in LocalStorage when the hook was first run, rather than being updated in a
+                `useEffect` callback. This ensured that the data was present even if the page was quickly refreshed.</p>
+
         </section>
         <section>
             <h2>Ways I Want to Improve the Application</h2>
-            <p>I would love to build this project again in React Native. I also think it would be cool to 
-                create a timer associated with each to-do list item so users can plan out their day with more 
-                specificity. Meaning an item is listed with an estimate of how long it will take to complete 
-                that task, then there is an alarm that goes off when that item should be done.</p>
+            <p>I would love to build this project again in React Native. I also think it would be cool to
+                create a timer associated with each to-do list item so users can plan out their day with more
+                specificity. Meaning an item would be listed with an estimate of how long it will take to complete
+                that task, then there would be an alarm set to go off when that item should be done.</p>
         </section>
         <section>
             <h2>Conclusion</h2>
-            <p>Building the React To-Do List application was a rewarding experience that reforced important concets around LocalStorage, and useState. The challenges I faced and the 
-                solutions I found are why I love developing new projects, and I am inspired to keep imporving this application.</p>
+            <p>Building the React To-Do List application was a rewarding experience that reforced important concepts
+                around LocalStorage, and useState. The challenges I faced and the
+                solutions I found are why I love developing new projects, and I am inspired to keep improving this
+                application.</p>
         </section>
         <section class="closing">
             <div class="blog-links">
-                <h3><a alt="link to live project"target="_blank" href="https://luriek.github.io/React-todolist/">View this project live here</a></h3>
-                <h3><a alt="Link to project on Github"target="_blank" href="https://luriek.github.io/React-todolist/">View this project on GitHub</a></h3>
+                <h3><a alt="link to live project" target="_blank" href="https://luriek.github.io/React-todolist/">View
+                        this project live here</a></h3>
+                <h3><a alt="Link to project on Github" target="_blank"
+                        href="https://luriek.github.io/React-todolist/">View this project on GitHub</a></h3>
             </div>
             <div class="blog-images">
                 <img alt="image of project" class="img2cell" src="../img/todo_mobile.png">
@@ -134,7 +143,8 @@
             </div>
         </section>
     </article>
-    
-    
+
+
 </body>
+
 </html>
