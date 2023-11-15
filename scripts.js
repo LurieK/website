@@ -28,20 +28,20 @@ const projects= document.getElementsByClassName('projects')[0];
 
 projects.addEventListener('click', function (){
     console.log('projects was clicked')
+    const projectsSectionMobile = document.querySelector('.responsive-portfolio');
+    const projectsSection = document.querySelector('.images');
 
-    if (window.innerwidth > 1000){
-        const projectsSection = document.querySelector('.images');
+    if (window.innerWidth > 1000){
         if (projectsSection.style.display === 'flex') {
             projectsSection.style.display = 'none';
         } else {
             projectsSection.style.display = 'flex';
         }
     }else{
-        const projectsSection = document.querySelector('.responsive-portfolio');
-        if (projectsSection.style.display === 'flex') {
-            projectsSection.style.display = 'none';
+        if (projectsSectionMobile.style.display === 'flex') {
+            projectsSectionMobile.style.display = 'none';
         } else {
-            projectsSection.style.display = 'flex';
+            projectsSectionMobile.style.display = 'flex';
         }
     }
  })
