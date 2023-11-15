@@ -28,11 +28,20 @@ const projects= document.getElementsByClassName('projects')[0];
 
 projects.addEventListener('click', function (){
     console.log('projects was clicked')
-    const projectsSection = document.querySelector('.images');
-    if (projectsSection.style.display === 'flex') {
-        projectsSection.style.display = 'none';
-    } else {
-        projectsSection.style.display = 'flex';
+
+    if (window.innerwidth > 1000){
+        const projectsSection = document.querySelector('.images');
+        if (projectsSection.style.display === 'flex') {
+            projectsSection.style.display = 'none';
+        } else {
+            projectsSection.style.display = 'flex';
+        }
+    }else{
+        const projectsSection = document.querySelector('.responsive-portfolio');
+        if (projectsSection.style.display === 'flex') {
+            projectsSection.style.display = 'none';
+        } else {
+            projectsSection.style.display = 'flex';
+        }
     }
- 
  })
