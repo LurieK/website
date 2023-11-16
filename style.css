@@ -316,6 +316,26 @@ a:link {
         font-weight: 300;
     }
 }
+
+.wwhna{
+    display:flex;
+    flex-flow: row;
+}
+
+.jasmin{
+    display: flex;
+    flex-flow:column;
+}
+
+.jasmin img {
+    width: 50%;
+}
+
+.wwhna-description{
+    display: flex;
+    flex-flow:column;
+}
+
 .portfolio h2 {
     font-size: 70px;
     text-align: center;
