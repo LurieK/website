@@ -326,10 +326,18 @@ a:link {
     display: flex;
     flex-flow:column;
 }
+.img-jasmin{
+     display: inline-block; 
+     position: relative; 
+     width: 200px; 
+     height: 200px; 
+     overflow: hidden; 
+     border-radius: 50%; 
+     background-image: url(./img/jasmin_mittag.jpg);
+     background-size: 100%;
 
-.jasmin img {
-    width: 50%;
 }
+
 
 .wwhna-description{
     display: flex;
