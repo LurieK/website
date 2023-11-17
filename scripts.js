@@ -29,7 +29,7 @@ const clients= document.getElementsByClassName('clients')[0];
 
 clients.addEventListener('click', function (){
     console.log('clients was clicked')
-    const clientsSection = document.querySelector('.client');
+    const clientsSection = document.querySelector('.client-dropdwn');
     if (clientsSection.style.display === 'flex') {
         clientsSection.style.display = 'none';
     } else {

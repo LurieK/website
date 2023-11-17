@@ -317,8 +317,13 @@ a:link {
     }
 }
 
+.client-dropwdwn{
+    display: none;
+    flex-flow: column;
+}
+
 .client{
-    display:none;
+    display:flex;
     flex-flow: column;
     background-color:#F6F6F6;
 }
