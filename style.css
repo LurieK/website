@@ -318,7 +318,7 @@ a:link {
 }
 
 .client{
-    display:flex;
+    display:none;
     flex-flow: column;
     background-color:#F6F6F6;
 }
@@ -331,7 +331,7 @@ a:link {
 
      width: 200px;
     height: 200px; 
-     
+     margin: 20px;
      border-radius: 50%; 
      background-image: url(./img/jasmin_mittag.jpg);
      background-size: 100%;
@@ -362,14 +362,15 @@ a:link {
     font-size: 70px;
     text-align: center;
     margin-top: 0;
-    padding-top: 30px;
     font-weight: 400;
     padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #e2e0e0b0;
+    
 }
 
 .portfolio {
-    background-color: #e2e0e0b0;
-    ;
+    
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -481,6 +482,10 @@ button:hover {
 }
 
 @media screen and (max-width: 1000px) {
+    .jasmin .testemonial,
+    .lauren .testemonial{
+        width: 50%;
+    }
 
     .portfolio h2 {
         font-size: 50px;

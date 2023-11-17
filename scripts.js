@@ -23,7 +23,22 @@ document.addEventListener('DOMContentLoaded', function() {
     
  });
 
+//drop down for client projects 
 
+const clients= document.getElementsByClassName('clients')[0];
+
+clients.addEventListener('click', function (){
+    console.log('clients was clicked')
+    const clientsSection = document.querySelector('.client');
+    if (clientsSection.style.display === 'flex') {
+        clientsSection.style.display = 'none';
+    } else {
+        clientsSection.style.display = 'flex';
+    }
+    
+ })
+
+//drop down for personal projects 
 const projects= document.getElementsByClassName('projects')[0];
 
 projects.addEventListener('click', function (){
