@@ -26,10 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
 //drop down for client projects 
 
 const clients= document.getElementsByClassName('clients')[0];
-
+const clientsSection = document.querySelector('.client-dropdwn');
+console.log (clientsSection.style.display)
 clients.addEventListener('click', function (){
     console.log('clients was clicked')
-    const clientsSection = document.querySelector('.client-dropdwn');
+    
     if (clientsSection.style.display === 'flex') {
         clientsSection.style.display = 'none';
     } else {
