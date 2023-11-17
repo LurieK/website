@@ -317,7 +317,7 @@ a:link {
     }
 }
 
-.wwhna{
+.client{
     display:flex;
     flex-flow: column;
     background-color:#F6F6F6;
@@ -327,7 +327,7 @@ a:link {
     display: flex;
     flex-flow:row;
 }
-.img-jasmin{
+.img-client{
 
      width: 200px;
     height: 200px; 
@@ -339,7 +339,8 @@ a:link {
 
 }
 
-.jasmin .testemonial {
+.jasmin .testemonial,
+.lauren .testemonial {
     width: 40%;
     margin-right: 20px;
     margin-left: 20px;
@@ -350,6 +351,12 @@ a:link {
     display: flex;
     flex-flow:column;
 }
+
+.lauren{
+    display: flex;
+    flex-flow:row-reverse;
+}
+
 
 .portfolio h2 {
     font-size: 70px;
