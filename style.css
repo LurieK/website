@@ -319,23 +319,30 @@ a:link {
 
 .wwhna{
     display:flex;
-    flex-flow: row;
+    flex-flow: column;
+    background-color:#F6F6F6;
 }
 
 .jasmin{
     display: flex;
-    flex-flow:column;
+    flex-flow:row;
 }
 .img-jasmin{
-     display: inline-block; 
-     position: relative; 
-     width: 200px; 
-     height: 200px; 
-     overflow: hidden; 
+
+     width: 200px;
+    height: 200px; 
+     
      border-radius: 50%; 
      background-image: url(./img/jasmin_mittag.jpg);
      background-size: 100%;
+     background-repeat:no-repeat ;
 
+}
+
+.jasmin .testemonial {
+    width: 40%;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 
@@ -377,6 +384,7 @@ a:link {
     flex-flow: column;
     margin-left: 20px;
     margin-right: 20px;
+    background-color: #F6F6F6;
 }
 .responsive-portfolio {
     display: none;
