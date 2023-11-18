@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //drop down for client projects 
 
-const clients= document.getElementsByClassName('clients')[0];
+const clients= document.getElementsByClassName('clients-title')[0];
 const clientsSection = document.querySelector('.client-dropdwn');
 console.log (clientsSection.style.display)
 clients.addEventListener('click', function (){
@@ -61,3 +61,25 @@ projects.addEventListener('click', function (){
         }
     }
  })
+
+
+const buttonContainer = document.querySelector('.button-container');
+const jasmin = document.querySelector('.jasmin');
+const projectImage = document.querySelector('.project-image');
+
+function showButtons(){
+
+    jasmin.style.opacity = '0.5';
+    buttonContainer.style.pointerEvents = 'auto';
+    buttonContainer.style.opacity = '1';
+
+}
+
+function hideButtons(){
+    buttonContainer.style.opacity = '0';
+    jasmin.style.opacity='1'
+}
+
+projectImage.addEventListener('mouseenter', showButtons)
+jasmin.addEventListener('click', hideButtons)
+
