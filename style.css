@@ -512,7 +512,19 @@ button:hover {
 @media screen and (max-width: 1000px) {
     .jasmin .testemonial,
     .lauren .testemonial{
-        width: 50%;
+        width: 75%;
+    }
+
+    .client-dropdwn{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .jasmin, 
+    .lauren {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
     }
 
     .portfolio h2 {
