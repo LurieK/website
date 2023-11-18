@@ -332,9 +332,10 @@ a:link {
 .jasmin{
     display: flex;
     flex-flow:row;
+    justify-content: space-around;
 }
 .img-client{
-
+    align-self: center;
      width: 200px;
     height: 200px; 
      margin: 20px;
@@ -350,6 +351,7 @@ a:link {
     width: 40%;
     margin-right: 20px;
     margin-left: 20px;
+    align-self: center;
 }
 
 
@@ -361,23 +363,27 @@ a:link {
 .lauren{
     display: flex;
     flex-flow:row-reverse;
+    justify-content: space-around;
 }
 .project-image{
     width: 30%;
 }
 .button-container {
   position: absolute;
-  top: 30%; /* Adjust as needed */
-  left: 30px; /* Start offscreen */
-  transform: translateY(-50%);
+  left: auto; 
+  top: 130px;
   opacity: 0;
   transition: opacity 0.5s, left 0.5s;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: -webkit-fill-available;
   gap: 10px; /* Space between buttons */
 }
 
+.button-container button{
+    width: 150px;
+}
 
 
 .portfolio h2 {
