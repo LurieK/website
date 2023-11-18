@@ -53,7 +53,7 @@ projects.addEventListener('click', function (){
         } else {
             projectsSection.style.display = 'flex';
         }
-    }else{
+    }else if (window.innerWidth <= 1000){
         if (projectsSectionMobile.style.display === 'flex') {
             projectsSectionMobile.style.display = 'none';
         } else {
